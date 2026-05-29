@@ -8,20 +8,13 @@ QuickSlate is designed for users who prefer instant system-level actions without
 
 Features
 
-Quick Settings tile-based utility system
-
-Instant access to system actions from notification shade
-
-Fully offline operation (no internet required)
-
-Lightweight design with minimal resource usage
-
-No background services or persistent processes
-
-Fast and responsive execution
-
-Clean system-level integration
-
+- Quick Settings tile-based utility system
+- Instant access to system actions from notification shade
+- Fully offline operation (no internet required)
+- Lightweight design with minimal resource usage
+- No background services or persistent processes
+- Fast and responsive execution
+- Clean system-level integration
 
 Purpose
 
@@ -33,31 +26,19 @@ QuickSlate uses only essential system permissions required for Quick Settings ti
 
 Privacy
 
-No data is collected
-
-No data is transmitted
-
-No analytics or tracking
-
-Fully offline operation
-
+- No data is collected
+- No data is transmitted
+- No analytics or tracking
+- Fully offline operation
 
 QuickSlate is designed with a privacy-first approach.
 
 Installation
 
 1. Download the latest APK from Releases
-
-
 2. Enable “Install unknown apps” on your device
-
-
 3. Install the APK
-
-
 4. Add QuickSlate tiles from Quick Settings panel
-
-
 
 Compatibility
 
@@ -70,3 +51,17 @@ v1.0 — Initial Release
 License
 
 Closed-source proprietary software. All rights reserved.
+
+Screenshots
+
+Quick Settings Tile Preview
+
+"QuickSlate Screenshot 1" (https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg)
+
+Tile Management
+
+"QuickSlate Screenshot 2" (https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg)
+
+App Information
+
+"QuickSlate Screenshot 3" (https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg)

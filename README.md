@@ -52,16 +52,10 @@ License
 
 Closed-source proprietary software. All rights reserved.
 
-Screenshots
+## Screenshots
 
-Quick Settings Tile Preview
-
-"QuickSlate Screenshot 1" (https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg)
-
-Tile Management
-
-"QuickSlate Screenshot 2" (https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg)
-
-App Information
-
-"QuickSlate Screenshot 3" (https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg" width="250"/>
+  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg" width="250"/>
+  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg" width="250"/>
+</p>

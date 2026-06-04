@@ -1,12 +1,12 @@
-QuickSlate
+# QuickSlate
 
 QuickSlate is a lightweight Android utility toolkit powered by Quick Settings tiles. It provides fast access to essential device actions directly from the notification shade. It works entirely offline, requires no internet access, and uses only minimal system permissions required for tile functionality.
 
-Overview
+## Overview
 
 QuickSlate is designed for users who prefer instant system-level actions without opening apps. It integrates directly into Android Quick Settings, enabling fast interaction with device utilities in a clean and minimal way. The focus is performance, simplicity, and responsiveness with zero background overhead.
 
-Features
+## Features
 
 - Quick Settings tile-based utility system
 - Instant access to system actions from notification shade
@@ -16,15 +16,22 @@ Features
 - Fast and responsive execution
 - Clean system-level integration
 
-Purpose
+## What's New in v1.1
+
+- **Default Assistant** — Instantly open Assist & Voice Input settings to change your default assistant app
+- **Default Launcher** — Jump directly to Default Apps settings to switch your home screen launcher
+- **Accessibility** — Open Accessibility settings instantly for quick access to accessibility services
+- **Draw Over Apps** — Directly access the Manage Overlay Permission screen
+
+## Purpose
 
 QuickSlate is built for efficiency-focused Android users who want faster access to device functions without navigating through multiple menus or launching full applications. It reduces interaction steps and improves accessibility for frequently used actions via Quick Settings tiles.
 
-Permissions
+## Permissions
 
 QuickSlate uses only essential system permissions required for Quick Settings tile functionality. No unnecessary permissions are requested.
 
-Privacy
+## Privacy
 
 - No data is collected
 - No data is transmitted
@@ -33,22 +40,22 @@ Privacy
 
 QuickSlate is designed with a privacy-first approach.
 
-Installation
+## Installation
 
 1. Download the latest APK from Releases
-2. Enable “Install unknown apps” on your device
+2. Enable "Install unknown apps" on your device
 3. Install the APK
 4. Add QuickSlate tiles from Quick Settings panel
 
-Compatibility
+## Compatibility
 
 Designed for modern Android devices supporting Quick Settings tile services (Android 10+ recommended).
 
-Version
+## Version
 
-v1.0 — Initial Release
+v1.1
 
-License
+## License
 
 Closed-source proprietary software. All rights reserved.
 

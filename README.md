@@ -1,68 +1,25 @@
 # QuickSlate
-
-QuickSlate is a lightweight Android utility toolkit powered by Quick Settings tiles. It provides fast access to essential device actions directly from the notification shade. It works entirely offline, requires no internet access, and uses only minimal system permissions required for tile functionality.
-
-## Overview
-
-QuickSlate is designed for users who prefer instant system-level actions without opening apps. It integrates directly into Android Quick Settings, enabling fast interaction with device utilities in a clean and minimal way. The focus is performance, simplicity, and responsiveness with zero background overhead.
-
-## Features
-
-- Quick Settings tile-based utility system
-- Instant access to system actions from notification shade
-- Fully offline operation (no internet required)
-- Lightweight design with minimal resource usage
-- No background services or persistent processes
-- Fast and responsive execution
-- Clean system-level integration
-
-## What's New in v1.1
-
-- **Default Assistant** — Instantly open Assist & Voice Input settings to change your default assistant app
-- **Default Launcher** — Jump directly to Default Apps settings to switch your home screen launcher
-- **Accessibility** — Open Accessibility settings instantly for quick access to accessibility services
-- **Draw Over Apps** — Directly access the Manage Overlay Permission screen
-
-## Purpose
-
-QuickSlate is built for efficiency-focused Android users who want faster access to device functions without navigating through multiple menus or launching full applications. It reduces interaction steps and improves accessibility for frequently used actions via Quick Settings tiles.
-
+QuickSlate is a lightweight Android utility toolkit powered by Quick Settings tiles. It provides fast, instant access to essential device actions and system settings directly from the notification shade without the need to open full applications or navigate deep into device menus.
+The app is built entirely for speed and efficiency, operating with zero background overhead, no persistent processes, and zero battery drain.
 ## Permissions
-
-QuickSlate uses only essential system permissions required for Quick Settings tile functionality. No unnecessary permissions are requested.
-
+QuickSlate requests only the minimal system permissions required to expose tiles and launch their respective system targets.
 ## Privacy
-
-- No data is collected
-- No data is transmitted
-- No analytics or tracking
-- Fully offline operation
-
-QuickSlate is designed with a privacy-first approach.
-
+QuickSlate is built with a strict privacy-first architecture:
+ * **No Internet Permission:** The app cannot connect to the web.
+ * **No Data Collection:** No logs, analytics, or tracking scripts are bundled.
+ * **Fully Offline:** All operations happen locally on your device.
 ## Installation
-
-1. Download the latest APK from Releases
-2. Enable "Install unknown apps" on your device
-3. Install the APK
-4. Add QuickSlate tiles from Quick Settings panel
-
+ 1. Download the latest APK from the Releases section.
+ 2. Enable **Install unknown apps** for your browser or file manager if prompted.
+ 3. Install the APK.
+ 4. Swipe down your notification shade twice, tap the **Edit (pencil) icon**, and drag the QuickSlate tiles into your active panel.
 ## Compatibility
-
-Designed for modern Android devices supporting Quick Settings tile services (Android 10+ recommended).
-
-## Version
-
-v1.1
-
-## License
-
-Closed-source proprietary software. All rights reserved.
-
+Designed for modern Android devices supporting custom Quick Settings tile services (Android 10+ recommended).
 ## Screenshots
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg" width="250"/>
-  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg" width="250"/>
-  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg" width="250"/>
+<img src="[https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg](https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg)" width="250"/>
+<img src="[https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg](https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg)" width="250"/>
+<img src="[https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg](https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg)" width="250"/>
 </p>
+## License
+Closed-source proprietary software. All rights reserved.

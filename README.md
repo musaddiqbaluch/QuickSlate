@@ -17,9 +17,9 @@ QuickSlate is built with a strict privacy-first architecture:
 Designed for modern Android devices supporting custom Quick Settings tile services (Android 10+ recommended).
 ## Screenshots
 <p align="center">
-<img src="[https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg](https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg)" width="250"/>
-<img src="[https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg](https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg)" width="250"/>
-<img src="[https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg](https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg)" width="250"/>
+  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-1.jpg" width="250"/>
+  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-2.jpg" width="250"/>
+  <img src="https://raw.githubusercontent.com/musaddiqbaluch/QuickSlate/main/quickslate-screenshot-3.jpg" width="250"/>
 </p>
 ## License
 Closed-source proprietary software. All rights reserved.

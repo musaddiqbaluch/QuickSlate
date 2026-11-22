@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.musaddiqbaluch.quickslate">
+    
+        <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Accessibility -->
+        <service
+            android:name=".QuickSettingsTiles$AccessibilityTile"
+            android:exported="true"
+            android:icon="@drawable/ic_accessibility"
+            android:label="@string/qs_accessibility"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Apps -->
+        <service
+            android:name=".QuickSettingsTiles$AppsTile"
+            android:exported="true"
+            android:icon="@drawable/ic_apps"
+            android:label="@string/qs_apps"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Default assistant -->
+        <service
+            android:name=".QuickSettingsTiles$DefaultAssistantTile"
+            android:exported="true"
+            android:icon="@drawable/ic_assistant"
+            android:label="@string/qs_default_assistant"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Battery usage -->
+        <service
+            android:name=".QuickSettingsTiles$BatteryTile"
+            android:exported="true"
+            android:icon="@drawable/ic_battery"
+            android:label="@string/qs_battery"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Developer options -->
+        <service
+            android:name=".QuickSettingsTiles$DeveloperTile"
+            android:exported="true"
+            android:icon="@drawable/ic_developer_mode"
+            android:label="@string/qs_developer"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- System-wide All files access -->
+        <service
+            android:name=".QuickSettingsTiles$AllFilesTile"
+            android:exported="true"
+            android:icon="@drawable/ic_files"
+            android:label="@string/qs_all_files"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- System-wide Install unknown apps -->
+        <service
+            android:name=".QuickSettingsTiles$UnknownAppsTile"
+            android:exported="true"
+            android:icon="@drawable/ic_install_mobile"
+            android:label="@string/qs_unknown_apps"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- System-wide Notifications -->
+        <service
+            android:name=".QuickSettingsTiles$NotificationsTile"
+            android:exported="true"
+            android:icon="@drawable/ic_notification_settings"
+            android:label="@string/qs_notifications"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Usage access -->
+        <service
+            android:name=".QuickSettingsTiles$UsageAccessTile"
+            android:exported="true"
+            android:icon="@drawable/ic_query_stats"
+            android:label="@string/qs_usage_access"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Default apps -->
+        <service
+            android:name=".QuickSettingsTiles$DefaultAppsTile"
+            android:exported="true"
+            android:icon="@drawable/ic_rocket_launch"
+            android:label="@string/qs_default_apps"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- System-wide Modify system settings -->
+        <service
+            android:name=".QuickSettingsTiles$ModifySettingsTile"
+            android:exported="true"
+            android:icon="@drawable/ic_settings_modified"
+            android:label="@string/qs_modify_settings"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- System-wide Display over other apps -->
+        <service
+            android:name=".QuickSettingsTiles$OverlayTile"
+            android:exported="true"
+            android:icon="@drawable/ic_settings_overlay"
+            android:label="@string/qs_overlay"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Storage -->
+        <service
+            android:name=".QuickSettingsTiles$StorageTile"
+            android:exported="true"
+            android:icon="@drawable/ic_storage"
+            android:label="@string/qs_storage"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

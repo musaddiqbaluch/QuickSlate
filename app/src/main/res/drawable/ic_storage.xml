@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Drive outlines -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M5,4H19a2,2 0 0 1 2,2V8a2,2 0 0 1 -2,2H5a2,2 0 0 1 -2,-2V6a2,2 0 0 1 2,-2z
+                          M5,14H19a2,2 0 0 1 2,2V18a2,2 0 0 1 -2,2H5a2,2 0 0 1 -2,-2V16a2,2 0 0 1 2,-2z
+                          M12,7H17
+                          M12,17H17" />
+
+    <!-- Indicator dots -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M7,6a1,1 0 1,0 0,2a1,1 0 1,0 0,-2z
+                          M7,16a1,1 0 1,0 0,2a1,1 0 1,0 0,-2z" />
+</vector>

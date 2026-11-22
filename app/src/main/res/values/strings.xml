@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Quick Slate</string>
+
+    <!-- Navigation -->
+    <string name="action_back">Back</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- In-app tiles -->
+    <string name="tile_accessibility">Accessibility</string>
+    <string name="tile_apps">App management</string>
+    <string name="tile_default_assistant">Default assistant</string>
+    <string name="tile_battery">Battery usage</string>
+    <string name="tile_developer_options">Developer options</string>
+    <string name="tile_all_files_access">All files access</string>
+    <string name="tile_install_unknown_apps">Install unknown apps</string>
+    <string name="tile_notifications">Quick notifications</string>
+    <string name="tile_usage_access">Usage access</string>
+    <string name="tile_default_apps">Default apps</string>
+    <string name="tile_modify_system_settings">Modify settings</string>
+    <string name="tile_display_over_other_apps">Display over apps</string>
+    <string name="tile_storage">Storage access</string>
+
+    <!-- Quick Settings tile labels -->
+    <string name="qs_accessibility">Accessibility</string>
+    <string name="qs_apps">App management</string>
+    <string name="qs_default_assistant">Default assistant</string>
+    <string name="qs_battery">Battery usage</string>
+    <string name="qs_developer">Developer options</string>
+    <string name="qs_all_files">All files access</string>
+    <string name="qs_unknown_apps">Unknown apps</string>
+    <string name="qs_notifications">Quick notifications</string>
+    <string name="qs_usage_access">Usage access</string>
+    <string name="qs_default_apps">Default apps</string>
+    <string name="qs_modify_settings">System settings</string>
+    <string name="qs_overlay">Display over apps</string>
+    <string name="qs_storage">Storage access</string>
+
+    <!-- Errors -->
+    <string name="settings_unavailable">This settings screen isn\'t available on your device.</string>
+    <string name="link_unavailable">No app available to open this link.</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="section_feedback">Feedback</string>
+    <string name="section_about">About</string>
+    <string name="section_developer">Developer</string>
+
+    <!-- Haptic feedback -->
+    <string name="setting_haptics">Haptic feedback</string>
+    <string name="setting_haptics_summary">Vibrate when you tap a tile</string>
+    <string name="setting_haptics_strength">Strength</string>
+    <string name="haptics_light">Light</string>
+    <string name="haptics_medium">Medium</string>
+    <string name="haptics_heavy">Heavy</string>
+
+    <!-- Developer information -->
+    <string name="dev_name">Musaddiq Baluch</string>
+    <string name="dev_description">I build Android apps, experiment with ideas, and enjoy turning simple thoughts into something useful.</string>
+
+    <!-- Settings rows -->
+    <string name="setting_source_code">Source code</string>
+    <string name="setting_licenses">Open-source licenses</string>
+    <string name="setting_privacy">Privacy policy</string>
+    <string name="setting_version">App version</string>
+
+    <!-- External links -->
+    <string name="source_code_url">https://github.com/YOUR_USERNAME/YOUR_REPO</string>
+    <string name="license_url">https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/LICENSE</string>
+    <string name="github_url">https://github.com/YOUR_USERNAME</string>
+
+    <!-- Privacy policy dialog -->
+    <string name="privacy_title">Privacy policy</string>
+    <string name="privacy_button">Close</string>
+
+    <string name="privacy_overview_title">Overview</string>
+    <string name="privacy_overview_body">Quick Slate is a shortcut app. It only opens Android\'s own system settings screens.</string>
+
+    <string name="privacy_internet_title">Internet</string>
+    <string name="privacy_internet_body">The app has no Internet permission and works fully offline.</string>
+
+    <string name="privacy_permissions_title">Permissions</string>
+    <string name="privacy_permissions_body">The only permission is vibration, used for haptic feedback when enabled in Settings. The app does not read or change any system setting itself.</string>
+
+    <string name="privacy_data_title">Your data</string>
+    <string name="privacy_data_body">Nothing is collected, stored off your device or shared. Your haptic preference stays on this device.</string>
+
+    <string name="privacy_tracking_title">Ads and tracking</string>
+    <string name="privacy_tracking_body">There are no ads, analytics or trackers.</string>
+
+    <string name="privacy_links_title">Open source and links</string>
+    <string name="privacy_links_body">The source code is public, so you can verify how the app works. The Source Code, License and GitHub links open your browser. Quick Slate does not control those external websites.</string>
+
+    <string name="privacy_changes_title">Changes</string>
+    <string name="privacy_changes_body">If this policy changes, it will be updated here in the app.</string>
+
+    <!-- Open-source licenses dialog -->
+    <string name="licenses_title">Open-source licenses</string>
+    <string name="licenses_button">Close</string>
+    <string name="licenses_androidx_title">AndroidX</string>
+    <string name="licenses_androidx_body">Copyright The Android Open Source Project. Licensed under the Apache License 2.0.</string>
+    <string name="licenses_material_title">Material Components for Android</string>
+    <string name="licenses_material_body">Copyright Google LLC. Licensed under the Apache License 2.0.</string>
+    <string name="github_button">GitHub</string>
+
+</resources>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:liftOnScroll="true"
+        app:liftOnScrollColor="?attr/colorSurfaceContainer"
+        app:liftOnScrollTargetViewId="@id/content_scroll">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            style="?attr/collapsingToolbarLayoutLargeStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="@string/app_name"
+            app:toolbarId="@+id/toolbar">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingEnd="4dp"
+                app:layout_collapseMode="pin"
+                app:menu="@menu/menu_main" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="@integer/grid_columns"
+            android:paddingStart="12dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_accessibility"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_accessibility" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_accessibility" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_apps"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_apps" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_apps" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_default_assistant"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_assistant" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_default_assistant" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_battery"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_battery" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_battery" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_developer"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_developer_mode" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_developer_options" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_all_files"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_files" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_all_files_access" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_unknown_apps"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_install_mobile" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_install_unknown_apps" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_notifications"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_notification_settings" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_notifications" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_usage_access"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_query_stats" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_usage_access" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_default_apps"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_rocket_launch" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_default_apps" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_modify_settings"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_settings_modified" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_modify_system_settings" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_overlay"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_settings_overlay" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_display_over_other_apps" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tile_storage"
+                style="@style/Widget.QuickSlate.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="4dp">
+
+                <LinearLayout style="@style/Widget.QuickSlate.TileContent">
+
+                    <ImageView
+                        style="@style/Widget.QuickSlate.TileIcon"
+                        android:src="@drawable/ic_storage" />
+
+                    <TextView
+                        style="@style/Widget.QuickSlate.TileLabel"
+                        android:text="@string/tile_storage" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

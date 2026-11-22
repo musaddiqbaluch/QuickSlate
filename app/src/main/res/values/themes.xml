@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main application theme -->
+    <style name="Theme.App" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowSplashScreenBackground">@color/ic_launcher_background</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+
+    <!-- Tile card -->
+    <style name="Widget.QuickSlate.Tile" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainerLow</item>
+        <item name="cardCornerRadius">28dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Tile content -->
+    <style name="Widget.QuickSlate.TileContent" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">136dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Tile icon -->
+    <style name="Widget.QuickSlate.TileIcon" parent="">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/bg_tile_icon</item>
+        <item name="android:tint">?attr/colorOnPrimary</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <!-- Tile label -->
+    <style name="Widget.QuickSlate.TileLabel" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleSmall</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Settings screen title -->
+    <style name="Widget.QuickSlate.SettingsTitle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadlineLarge</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Section label -->
+    <style name="Widget.QuickSlate.SectionLabel" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <!-- About section card -->
+    <style name="Widget.QuickSlate.SectionCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainer</item>
+        <item name="cardCornerRadius">28dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">?attr/colorSurfaceVariant</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Developer card -->
+    <style name="Widget.QuickSlate.DeveloperCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorTertiaryContainer</item>
+        <item name="cardCornerRadius">28dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Settings row: no pressed ripple -->
+    <style name="Widget.QuickSlate.SettingsRow" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">72dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Settings row icon -->
+    <style name="Widget.QuickSlate.SettingsRowIcon" parent="">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/bg_row_icon</item>
+        <item name="android:tint">?attr/colorPrimary</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <!-- Settings row text container -->
+    <style name="Widget.QuickSlate.SettingsRowText" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Settings row title -->
+    <style name="Widget.QuickSlate.SettingsRowTitle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Settings row subtitle -->
+    <style name="Widget.QuickSlate.SettingsRowSubtitle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- Settings row chevron -->
+    <style name="Widget.QuickSlate.SettingsRowChevron" parent="">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:tint">?attr/colorOnSurfaceVariant</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <!-- Developer name -->
+    <style name="Widget.QuickSlate.DeveloperName" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceTitleLarge</item>
+        <item name="android:textColor">?attr/colorOnTertiaryContainer</item>
+    </style>
+
+    <!-- Developer description -->
+    <style name="Widget.QuickSlate.DeveloperDescription" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">?attr/colorOnTertiaryContainer</item>
+    </style>
+
+    <!-- Developer button -->
+    <style name="Widget.QuickSlate.DeveloperButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/colorTertiary</item>
+        <item name="android:textColor">?attr/colorOnTertiary</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Circular shape -->
+    <style name="ShapeAppearance.QuickSlate.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>
